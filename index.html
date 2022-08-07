@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css fonts link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto+Condensed:wght@300;400;700&display=swap" 
+    rel="stylesheet">
+    <!-- another font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    
+    <!-- logo link -->
+    <script src="https://kit.fontawesome.com/68cd065d9a.js" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            font-family: 'Acme', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- header section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo">Portfo<span>lio</span></h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i id="icon" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i id="icon" class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h4>Hello, my name is</h4>
+                <h1>Farhan<span>Pandhre</span></h1>
+                <h3>I'm a Web Developer.</h3>
+                <div class="cv">
+                    <a href="images\Farhan Pandhre Resume (1).pdf" class="dwn-cv">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images\man.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtittle">About Me</h1>
+                    <h4>Developer <span>& Designer</span></h4>
+                    <p>Hey derr, I am a upcoming Full Stack Developer. Started as a Civil engineer and tryng to do my best as a web developer, always interested in learning new things, trying to provide clean code and pixel perfect design & also make the website more & more interactive with web animations. If u like my work, do contact me.....</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------skills----------------------------------------------- -->
+    <div id="skills">
+        <div class="wrapper">
+            <h1 class="skills-heading">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <!-- <img src="images\Html.png"> -->
+                    <h2>Java</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Html</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3"></i>
+                    <h2>CSS</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>JavaScript</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>ReactJs</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- ------------------------------------Services----------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 id="service-heading" >My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Designing user interfaces and navigation menus, writing and reviewing code for sites, typically HTML, XML, or JavaScript, integrating multimedia content onto a site & Troubleshooting problems with performance or user experience.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I develop the user interface as well as the webpage development and i can also create ux element interaction and helpul in positioning you company brand.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Every app should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------contact----------------------------------------------------------->
+    <div id="contact">
+                    <h2 class="conatact-heading">Contact Me</h2>
+                    <p class="p1">Let me lend you beautiful website</p>
+                    <p class="p2">You can find me everywhere</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/farhan-pandhre-92a21a126"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/FarhanPandhre"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/__farhanitrate__/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <h4 class="conatact-name">Farhan Pandhre</h4>
+                    <p class="p3">Made with love <i class="fa-solid fa-heart"></i> in India</p>
+                    <p class="p4">No <i class="fa-solid fa-copyright"></i> copy right issues <br> Feel free to copy</p>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
